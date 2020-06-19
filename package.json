@@ -1,0 +1,34 @@
+{
+  "name": "typescript-learning",
+  "version": "1.0.0",
+  "description": "A repository simply for my own personal use while learning Typescript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src/ dist/",
+    "lint:ts": "eslint src/",
+    "lint:js": "eslint dist/",
+    "transpile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristopherBilg/typescript-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChristopherBilg/typescript-learning/issues"
+  },
+  "homepage": "https://github.com/ChristopherBilg/typescript-learning#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.3.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "typescript": "^3.9.5"
+  }
+}
