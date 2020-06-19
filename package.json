@@ -2,12 +2,11 @@
   "name": "typescript-learning",
   "version": "1.0.0",
   "description": "A repository simply for my own personal use while learning Typescript.",
-  "main": "dist/index.js",
+  "main": "src_js/index.js",
   "scripts": {
-    "lint": "eslint src/ dist/",
-    "lint:ts": "eslint src/",
-    "lint:js": "eslint dist/",
-    "transpile": "tsc"
+    "start": "node src_js/index.js",
+    "lint": "eslint src/**/*.ts",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",

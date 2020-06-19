@@ -1,7 +1,28 @@
-const greeter = (person: string) => {
-  return 'Hello, ' + person
+interface Person {
+  firstName: string,
+  lastName: string,
+  age: string
 }
 
-const user = 'Jane User'
+class Student {
+  #person: Person // Private field
 
-console.log(greeter(user))
+  constructor (public person: Person) {
+    this.#person = person // Setting a private field
+  }
+
+  get greeting () {
+    const fn = this.person.firstName // Accessing data from a private field
+    const ln = this.person.lastName
+    const age = this.person.age
+    return `Hello, ${fn} ${ln}. You are ${age} years old.`
+  }
+}
+
+const user = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 40
+}
+
+console.log(new Student(user).greeting)
